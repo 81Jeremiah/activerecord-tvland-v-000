@@ -8,4 +8,5 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     self.shows.each{|show| puts "#{show.show}"}
+  end
 end
